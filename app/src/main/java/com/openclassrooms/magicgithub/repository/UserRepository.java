@@ -17,9 +17,6 @@ public class UserRepository {
 
     private final ApiService apiService; // TODO: A utiliser
 
-    static List<User> userList = new ArrayList<>(FAKE_USERS);
-
-
     public UserRepository(ApiService apiService) {
         this.apiService = apiService;
     }
@@ -43,23 +40,6 @@ public class UserRepository {
 
     }
 
-    /* public static void main(String[] args) {
-        //UserRepository.generateRandomUser();
-        System.out.println(getUsers().size());
-        userList.clear();
-        generateRandomUser();
-        //userList.remove(0);
-        System.out.println(getUsers().size());
-        /* deleteUser(userList.get(0));
-        System.out.println(userList.size());
-
-        System.out.println("Test removeTest:");
-        User userToDelete = getUsers().get(0);
-        System.out.println("userToDelete = " + userToDelete);
-        deleteUser(userToDelete);
-        System.out.println(userToDelete + " est présent? " + getUsers().contains(userToDelete));
-
-    } */
 
     public void deleteUser(User user) {
         // TODO: A modifier
